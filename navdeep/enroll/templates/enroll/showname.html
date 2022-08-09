@@ -1,0 +1,106 @@
+{% extends 'enroll/base.html' %}
+{% load static %}
+{% block content %}
+
+{% if p %}
+   <span class="sho">
+       <table >
+
+
+
+
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+        <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for st in p %}
+    <tr>
+      <th scope="row">{{st.id}}</th>
+      <td>{{st.name}}</td>
+      <td>{{st.email}}</td>
+      <td>{{st.password}}</td>
+        <td>
+            <a href="{% url 'update' st.id %}" ><button class="edit">Edit</button></a>
+
+        <form action="{% url 'delete' st.id %}" method="POST">
+            {% csrf_token %}
+            <input class="delete" type="submit" value="DELETE">
+
+        </form>
+            </td>
+<!--        <td> <a href="{% url 'delete' st.id %}" class="red">Delete</a>-->
+
+<!--        </td>-->
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+       </span>
+
+    {% else %}
+    <h3>No Records </h3>
+    {% endif %}
+<br><br><br>
+<a href="{% url 'home' %}" class="sback">Back</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--{% if p %}-->
+<!--<div class="header">Results Found </div>-->
+
+<!-- <table>-->
+<!--    <tr>-->
+<!--      <th scope="col">ID</th>-->
+<!--      <th scope="col">Name</th>-->
+<!--        <th scope="col">Email</th>-->
+<!--      <th scope="col">Password</th>-->
+<!--        <th scope="col">Action</th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  {% for i in p %}-->
+<!--    <tr>-->
+<!--      <th scope="row">{{i.id}}</th>-->
+<!--      <td>{{i.name}}</td>-->
+<!--      <td>{{i.email}}</td>-->
+<!--      <td>{{i.password}}</td>-->
+
+<!-- <td>-->
+<!--            <a href="{% url 'update' i.id %}" ><button class="edit">Edit</button></a>-->
+
+<!--        <form action="{% url 'delete' i.id %}" method="POST">-->
+<!--            {% csrf_token %}-->
+<!--            <input class="delete" type="submit" value="DELETE">-->
+
+<!--        </form>-->
+<!--            </td>-->
+
+
+
+<!--    </tr></tbody></table>-->
+
+
+
+
+<!--{% endfor %}-->
+<!--{% else %}-->
+<!--<div class="header">Found NO Results</div>-->
+<!--{% endif %}-->
+
+<!--<a href="{% url 'home' %}" class="seback" >Back</a>-->
+{% endblock content %}

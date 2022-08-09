@@ -1,0 +1,54 @@
+.homesaerch{
+border:7px solid white;
+width:70%;
+height:7%;
+border-radius:3%;
+
+}
+.homebutton{
+background-color:white;
+
+width:4vw;
+height:3vw;
+border-radius:5vw;
+float:top;
+border-style:ridge;
+
+
+
+}
+
+.title{
+margin-top:17vw;
+text-align:center;
+
+
+}
+
+label.logo{
+  color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding:0 2vw;
+
+}
+
+.navbar{
+            background-color: black;
+            border-radius: 10vw;
+          }
+.navbar ul{
+            overflow: auto;
+            margin-left:45vw;
+            margin-top:-3.5vw;
+        }
+.navbar li{
+            float:left;
+            list-style: none;
+            margin: 1vw 1vw;
+        }
+.navbar li a{
+            padding: 0vw 0vw;
+            text-decoration: none;
+            color: white;
+        }

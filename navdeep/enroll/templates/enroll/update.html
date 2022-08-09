@@ -1,0 +1,16 @@
+
+{% extends 'enroll/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="head">Edit Details </div>
+<form class="form" action="" method="post">
+    {% csrf_token %}
+    {{formd.as_p}}
+    <input class="button" type="submit" value="update">
+</form>
+
+<a href="{% url 'show' %}" class="eback">Back</a>
+
+
+{% endblock content%}

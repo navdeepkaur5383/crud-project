@@ -1,0 +1,35 @@
+{% extends 'enroll/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="head">Add new student</div>
+ <div class="faarm"><form class="form" action="" method="POST" novalidate>
+    {% csrf_token %}
+    {{form.non_field_errors}}
+
+   {% for forms in form %}
+    <div><br>
+        {{forms.label_tag}}<br>
+
+    {{forms}}
+
+  <br> <span class="errorlist"> {{forms.errors|striptags}}</span>
+    </div>
+
+    {% endfor %}
+
+    <input class="button"  type="submit" value="Submit" >
+
+
+
+</form>
+
+ </div>
+
+<a href="{% url 'home' %}" class="aback">Back</a>
+{% if messages %}
+{% for message in messages %}
+{{message}}
+{% endfor %}
+{% endif %}
+{% endblock content%}

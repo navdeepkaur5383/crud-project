@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'enroll/css/home.css' %}">
+    </head>
+  <body>
+  <header>
+        <nav class="navbar">
+            <label class="logo">CRUD PROJECT</label>
+            <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="{% url 'addandshow' %}">Add new student</a></li>
+        <li><a href="{% url 'show' %}">Student Information</a></li>
+        <li><form method="POST" action="{% url 'search' %}" >
+               {% csrf_token %}
+               <tr><td><input class="homesaerch" name="name" type="search">
+               <button class="homebutton" type="submit">Search Student</button>
+               </td>    </tr>
+
+           </form></li>
+      </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <header>
+        <nav class="navbar">
+
+
+        </nav>
+    </header>
+    <h1 class="title">Django CRUD(Create, Read, Update and Delete) Project</h1>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+
+
+
+.errorlist{
+font-size:1vw;
+color:red;
+box-sizing:border-box;
+}
+
+
+
+.header {
+   background-color:black;
+   color: white;
+   font-size: 1.5em;
+   padding: 1rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+th,td{
+width:20vw;
+text-align:center;
+padding:5px;
+}
+
+tr:nth-child(odd){
+background:#e6ffee;
+}
+
+.edit{
+background-color: #ffcc00;
+color:white;
+border:2px solid #ffcc00;
+width:5vw;
+height:2vw;
+border-style:ridge;
+
+}
+
+
+.delete{
+background-color: #ff3333;
+color:white;
+width:5vw;
+height:2vw;
+border-style:ridge;
+}
+
+.head{
+color:white;
+text-align:center;
+font-size:4vw;
+border:1vw solid black;
+
+background-color:black;
+border-top-style:ridge;
+border-left-style:ridge;
+border-right-style:ridge;
+margin-left:30%;
+width:38%;
+margin-top:1vw;
+}
+
+.button{
+background:	 black;
+color: white;
+font-size: 2vw;
+width: 36%;
+height: 10%;
+border-radius: 5%;
+margin-top: 5%;
+margin-bottom:5%;
+margin-left: 30%;
+box-sizing: border-box;
+padding-top: 0.5%;
+padding-bottom: 0.5%;
+}
+
+.form{
+color:black;
+margin-left:30%;
+font-size:2vw;
+padding-bottom:1%;
+padding-left:2%;
+width:40%;
+height:45%;
+border:1vw solid black;
+border-left-style:ridge;
+border-right-style:ridge;
+border-bottom-style:ridge;
+box-sizing:border-box;
+}
+.box{
+font-size:2vw;
+width:85%;
+height:20%;
+box-sizing: border-box;
+}
+.sback{
+background-color:black;
+color:white;
+padding:1.2vw 2vw;
+border-radius:10vw;
+font-size:2vw;
+border-style:ridge;
+margin-top:2vw;
+
+}
+messages{
+
+color:blue;
+
+}
+
+
+
+
+.seback{
+background-color:black;
+color:white;
+padding:1.2vw 2vw;
+border-radius:10vw;
+font-size:2vw;
+margin-left:70vw;
+border-style:ridge;
+
+
+}
+
+.eback{
+background-color:black;
+color:white;
+padding:1.2vw 2vw;
+border-radius:10vw;
+font-size:2vw;
+margin-left:70vw;
+border-style:ridge;
+
+
+}
+
+.aback{
+background-color:black;
+color:white;
+padding:1.2vw 2vw;
+border-radius:10vw;
+font-size:2vw;
+margin-left:70vw;
+border-style:ridge;
+background-image:url("C:\Users\Lenovo\Desktop\ba.png");
+
+
+}
